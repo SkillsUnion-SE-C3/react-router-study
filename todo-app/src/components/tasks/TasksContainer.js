@@ -8,25 +8,23 @@ function TaskContainer(props) {
 
   // OnMount, fetch tasks
   useEffect(() => {
-    PostmanAPI.get(`/owner/${props.ownerId}/task`).then((res) => {
-      setTasks(res.data);
-    });
+    fetchTasks();
   }, []);
 
-  const addTask = (title, description) => {
-    let id = 1;
-    if (tasks.length > 0) {
-      id = tasks[tasks.length - 1].id + 1;
-    }
+  function fetchTasks() {
+    PostmanAPI.get(`/owner/${props.ownerId}/task`).then((res) => {
+      console.log("fetchTasks", res.data);
+      setTasks(res.data);
+    });
+  }
 
-    const newTask = {
-      id,
+  const addTask = (title, description) => {
+    PostmanAPI.post(`/owner/${props.ownerId}/task`, {
       title,
       description,
-      ownerId: props.ownerId,
-    };
-
-    setTasks(tasks.concat([newTask]));
+    }).then((res) => {
+      fetchTasks();
+    });
   };
 
   const removeTask = (id) => {
