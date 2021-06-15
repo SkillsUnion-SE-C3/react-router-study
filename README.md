@@ -1,15 +1,24 @@
 [<img src="assets/images/su-logo.png" alt="Skills Union Logo" height="80px" />](https://www.skillsunion.com/)
-# Lorem ipsum: Study
+
+# React Router: Study
 
 ## Learning Objectives
 
 By the end of this, you should know:
 
-- Lorem ipsum dolor sit amet
+- What is URL routing
+- History of the old and new approaches to managing browser history
+- Why should we use `<HashRouter>` over `<BrowserRouter>`
+- Difference between static and dynamic routes
+- React routes are rendered inclusively when not using `<Switch>`
+- Different approaches to showing a component using `<Route>`
 
 By the end of this, you should be able to:
 
-- Lorem ipsum dolor sit amet
+- Explain generally how browsing history works.
+- Explain the problem with traditional browsing methods in a SPA.
+- Tell the difference between `<HashRouter>` and `<BrowserRouter>`.
+- Tell the difference in react routing behavior with `<Switch>` and without.
 
 ## Instructions
 
