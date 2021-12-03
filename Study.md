@@ -16,25 +16,35 @@ Use [DuckDuckGo](https://duckduckgo.com/) or your preferred search engine along 
 1. How does browsing history works?
 
    ```
-   Please write your answer here.
+   Using the history object you can use the property and methods to keep the page history so when 
+   users click back / forward / refresh is hold the page details without the app reloading from its
+   start state. 
    ```
 
 1. What problem does SPA face with the back button?
 
    ```
-   Please write your answer here.
+   If you don't store the data the back button can reset the whole app to its defualt state
    ```
 
 1. What is the difference between `<HashRouter>` and `<BrowserRouter>`
 
    ```
-   Please write your answer here.
+   BrowserRouter:
+      This is unavaliable for legacy browsers. 
+      uses client-side application to maintain clean routes but needs backend by web server
+   
+   HashRouter: 
+      No limitations on browser support
+      backward compatable single page application. 
+      The setup cannot be backed by server side rendering
+      Not limited to SPA. 
    ```
 
 1. What is the difference between routing with `<Switch>` and without?
 
    ```
-   Please write your answer here.
+   Switch renders a route exclusivly. 
    ```
 
 ### Response Guidelines
