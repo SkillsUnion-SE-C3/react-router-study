@@ -16,7 +16,7 @@ Use [DuckDuckGo](https://duckduckgo.com/) or your preferred search engine along 
 1. How does browsing history works?
 
    ```
-   Please write your answer here.
+   Your browser records a history of the sites that you have visited and stores this information once you have visited the sites
    ```
 
 1. What problem does SPA face with the back button?
@@ -28,13 +28,13 @@ Use [DuckDuckGo](https://duckduckgo.com/) or your preferred search engine along 
 1. What is the difference between `<HashRouter>` and `<BrowserRouter>`
 
    ```
-   Please write your answer here.
+   BrowserRouter - will show you the component of what followers the '/' in the browser url. It needs server configuration  wheras HashRouter shows the path of everything after the '#'which is for the client. Everything before the # is listened to by the server
    ```
 
 1. What is the difference between routing with `<Switch>` and without?
 
    ```
-   Please write your answer here.
+  Using the switch component ensures that only one route shows at any one time. Without it, you can end up with more than one page showing at a time.
    ```
 
 ### Response Guidelines
